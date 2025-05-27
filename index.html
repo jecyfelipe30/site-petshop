@@ -1,61 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pet Feliz Clínica Veterinária</title>
+  <title>Pet Shop Moderno</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Pet Feliz</h1>
-    <nav>
-      <a href="#servicos">Serviços</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Contato</a>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">Pet Shop</a>
+        <ul class="nav-links">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="image-row">
-      <img src="images/pet1.jpg" alt="Pet 1" />
-      <img src="images/pet2.jpg" alt="Pet 2" />
-      <img src="images/pet3.jpg" alt="Pet 3" />
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Bem-vindo ao Pet Shop</h1>
+      <p>O melhor cuidado para seu melhor amigo.</p>
+      <div class="imagens-home">
+        <img src="images/pet1.jpg" alt="Pet 1" />
+        <img src="images/pet2.jpg" alt="Pet 2" />
+        <img src="images/pet3.jpg" alt="Pet 3" />
+      </div>
     </div>
-    <h2 class="fade-in">Cuidando do seu melhor amigo com carinho e dedicação</h2>
-    <p class="fade-in delay-1">Atendimento veterinário, banho e tosa, vacinação e muito mais.</p>
-    <a class="whatsapp-button fade-in delay-2" href="https://wa.me/5599999999999" target="_blank">Fale conosco no WhatsApp</a>
   </section>
 
-  <section id="servicos">
-    <h3>Serviços</h3>
-    <ul>
-      <li>Consultas veterinárias</li>
-      <li>Banho e tosa</li>
-      <li>Vacinação</li>
-      <li>Emergências 24h</li>
-    </ul>
+  <section id="servicos" class="services">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+      <ul>
+        <li>Tosa e Banho</li>
+        <li>Consultas Veterinárias</li>
+        <li>Vacinação</li>
+        <li>Petshop Completo</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="sobre">
-    <h3>Sobre Nós</h3>
-    <p>Somos uma clínica veterinária dedicada ao cuidado e bem-estar dos seus pets, com equipe especializada e instalações modernas.</p>
-  </section>
+  <section id="contato" class="contact">
+    <div class="container">
+      <h2>Contato</h2>
+      <form action="https://formspree.io/f/yourformid" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
 
-  <section id="contato">
-    <h3>Contato</h3>
-    <p>📍 Rua das Flores, 123 - Bairro Jardim</p>
-    <p>📞 (99) 99999-9999</p>
-    <p>✉️ contato@petfeliz.com</p>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="_replyto" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form action="https://formspree.io/f/xnndkkav" method="POST">
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Pet Feliz. Todos os direitos reservados.</p>
+    <div class="container">
+      <p>© 2025 Pet Shop. Todos os direitos reservados.</p>
+    </div>
   </footer>
-
-  <!-- Botão flutuante do WhatsApp -->
-  <a href="https://wa.me/5599999999999" class="whatsapp-float" target="_blank" aria-label="Fale conosco no WhatsApp">
-    <img src="images/whatsapp-icon.png" alt="WhatsApp" />
-  </a>
 </body>
 </html>
